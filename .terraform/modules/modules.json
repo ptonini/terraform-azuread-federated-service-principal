@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"service_principal","Source":"registry.terraform.io/ptonini/service-principal/azuread","Version":"2.0.0","Dir":".terraform/modules/service_principal"}]}
