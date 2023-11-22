@@ -9,7 +9,14 @@ variable "scopes" {
     scope                = string
     role_definition_name = string
   }))
+  default = {}
 }
+
+variable "group_memberships" {
+  type    = set(string)
+  default = []
+}
+
 
 variable "audiences" {
   type    = set(string)
