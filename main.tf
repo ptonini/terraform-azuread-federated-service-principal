@@ -10,7 +10,6 @@ module "service_principal" {
 resource "azuread_application_federated_identity_credential" "this" {
   for_each              = toset(var.subjects)
   application_id        = coalesce(var.application_id, module.service_principal[0].application_id)
-  application_object_id = null
   display_name          = "${var.name}-${index(var.subjects, each.value)}"
   audiences             = var.audiences
   issuer                = var.issuer
